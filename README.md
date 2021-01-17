@@ -3,7 +3,7 @@
 ![App Screenshot](resources/app_screenshot.png)
 
 ## Background Info
-My Lenovo T430 laptop heats up *alot* to the point where it shuts down without warning. Alot means 115 °C.
+My Lenovo T430 laptop heats up **alot** to the point where it shuts down without warning. Alot means 115 °C.
 It doesn't always heat up that much, but when it does, it does so without warning, and I have lost data
 because of it.
 
@@ -17,6 +17,35 @@ temperatures exceeds a "High" temperature threshold, it blares a siren and gener
 notification.
 
 The siren stops when the highest of the two core temperatures drops below a "Low" temperature threshold.
+
+## Cool! How to install it?
+This was a silly project I made to familiarize myself with PyQt so don't expect this to work if you
+don't have a non-linux laptop that isn't a Lenovo T430. But be my guest and try it, and tell me if it
+works :)
+
+To use this, make sure you have `python3` installed, as well as `pip` (use your
+package manager to obtain these if you don't have them).
+
+Clone this repository, `cd` into it, and run the following commands (without the '$'):
+```
+$ python -m venv _venv  # This is only required ONCE
+$ . _venv/bin/activate
+$ pip install -r requirements.txt
+```
+
+This will create a python virtual environment, and install all necessary packages
+using the `requirements.txt` file.
+
+If you close your terminal window and want to resume work on this project, reactivate
+the virtual environment as follows:
+```
+$ . _venv/bin/activate
+```
+
+To run the project, do:
+```
+$ python main.py
+```
 
 ## Why this is useful
 My computer doesn't always heat up obnoxiously to the point where it shuts down. It usually does so
