@@ -3,7 +3,7 @@
 ![App Screenshot](resources/app_screenshot.png)
 
 ## Background Info
-My Lenovo T430 laptop heats up **alot** to the point where it shuts down without warning. Alot means 115 °C.
+My Lenovo T430 laptop heats up **alot** to the point where it shuts down without warning. Alot means 105 °C.
 It doesn't always heat up that much, but when it does, it does so without warning, and I have lost data
 because of it.
 
@@ -56,4 +56,30 @@ When the siren activates, I use my can of compressed air to rapidly cool down my
 level. Is it the smartest solution? Probably not. But using a laptop cooler and keeping the laptop lid
 open all the time actually isn't as helpful as one would expect, and I *need* my laptop to work as a desktop
 because I also need it to work as a laptop when I go to school. So this is currently the best solution
-¯\_(ツ)_/¯
+¯\\_(ツ)_/¯
+
+## F.A.Q.
+
+### 105 Degrees?! That's alot!
+True. It might not be that much. I haven't actually measured it yet. I do know two facts:
+
+1. 105 degrees is what the `sensors` command lists as my CPU's "critical" temperature.
+   Thus I assume that is the point where it automatically shuts down with no warning
+2. When I'm gaming, I easily record temperatures of 95 degrees. It's wild.
+
+### Why don't you keep the laptop lid open?
+I do.
+
+### Laptop Cooler?
+Check.
+
+### Maybe your fan has lint and s**t stuck in there that you can clean out.
+My fan is clean. I opened my laptop up and blew compressed air at it. I wish
+this was the problem.
+
+### You could make a liquid cooling system?
+That's alot of effort and I'm not feeling it. Also I might get a new laptop soon that heats less or has
+a better docking station that allows for better ventilation.
+
+### This is a nonsense F.A.Q.
+I know. I was bored when I wrote it. I should be doing physics homework right now.
