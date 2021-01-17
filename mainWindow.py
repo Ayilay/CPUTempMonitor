@@ -23,18 +23,18 @@ class Window(QMainWindow):
         # Font Family for all text
         fontFam = QFont("Droid Sans Mono", 16)
 
-        # Threshold Setting options
-        
+        # GroupBox with CPU Stats printed out
+        statusGroup = self.initTempDisplayGroup(fontFam)
+
+        # GroupBox of sliders to adjust the temperature thresholds
         threshGroup = self.initThreshSettingsGroup()
 
-        # Add the Temperature Status text
+        # The Overal Status label either shows Temperature Nominal or CPU HOT
         self.overalStatus = QLabel()
         self.overalStatus.setText("Temperature Nominal")
         self.overalStatus.setFont(fontFam)
         self.overalStatus.setStyleSheet("color: black")
         self.overalStatus.setAlignment(Qt.AlignCenter)
-
-        statusGroup = self.initTempDisplayGroup(fontFam)
 
         # Finally, place all sub-layouts and widgets to the main layout
         mainLayout = QVBoxLayout()
@@ -51,15 +51,6 @@ class Window(QMainWindow):
         zz = 20
         self.centralWidget.setContentsMargins(zz, 5, zz, 5)
         self.setCentralWidget(self.centralWidget)
-
-        # DEBUG STUFF, REMOVE WHEN DONE
-        #fontdb = QFontDatabase()
-        #for fontEntry in (fontdb.families()):
-        #    print( fontEntry)
-
-        # Create the Menu Bar
-        #self.createMenuBar()
-        #self.statusbar = self.statusBar()
 
     ############################################################
     #   GUI Init Helper Functions
@@ -190,16 +181,12 @@ class Window(QMainWindow):
 
         return threshGroup
 
+    # Update the temperature/fan RPM values displayed on the GUI
+    # given the new values in a dictionary
     def updateValues(self, dictValues):
-        gpuVal = 0
-        if (dictValues["gpu"] == 0):
-            gpuVal = "N/A"
-        else:
-            gpuVal = dictValues["gpu"] 
 
         self.cpu0_val.setText("{} °C".format(dictValues["core0"]));
         self.cpu1_val.setText("{} °C".format(dictValues["core1"]));
-        self.gpu0_val.setText("{} °C".format(gpuVal));
         self.rpm0_val.setText("{} RPM".format(dictValues["fan"]));
 
     def playAlarm(self):
