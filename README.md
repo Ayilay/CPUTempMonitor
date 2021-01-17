@@ -56,7 +56,7 @@ When the siren activates, I use my can of compressed air to rapidly cool down my
 level. Is it the smartest solution? Probably not. But using a laptop cooler and keeping the laptop lid
 open all the time actually isn't as helpful as one would expect, and I *need* my laptop to work as a desktop
 because I also need it to work as a laptop when I go to school. So this is currently the best solution
-¯\\_(ツ)_/¯
+¯\\\_(ツ)\_/¯
 
 ## F.A.Q.
 
