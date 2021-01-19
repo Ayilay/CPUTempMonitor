@@ -17,7 +17,7 @@ class Window(QMainWindow):
         # Threshold for alerting user
         # Alarm starts when temp rises above HI thresh
         # Alarm stops  when temp falls below LO thresh
-        self.tempThreshHi = 100
+        self.tempThreshHi = 95
         self.tempThreshLo = 85
 
         # Font Family for all text

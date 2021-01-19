@@ -1,0 +1,7 @@
+[Desktop Entry]
+Terminal=false
+Type=Application
+Name=CPU Temperature Monitor
+GenericName=CPU Temperature Monitor
+Exec=cd $HOME/Documents/temperatureMonitor; source _venv/bin/activate; python main.py
+Icon=$HOME/Documents/temperatureMonitor/resources/cpu-temp_2.png
