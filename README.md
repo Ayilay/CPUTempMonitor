@@ -11,7 +11,12 @@ It heats up because it is connected to 3 monitors via a docking station which ob
 ports. Silly design if you ask me, but alas laptops also were not designed to be used as desktops the way
 I am using it.
 
-## What this does
+*EDIT*: I recently drilled ALOT of holes into my docking station, to allow for better airflow
+of hot air out of the laptop. There's still some obstruction of air due to the dock mechanism that
+ejects my laptop. It seemed to help slightly, because I can stay on Zoom calls for longer, BUT eventually
+it still reached the 95C temperature that triggers the sirens.
+
+## What this applet does
 This applet reads my CPU temperatures every 2 seconds, and displays them. If the largest of the two
 temperatures exceeds a "High" temperature threshold, it blares a siren and generates a desktop
 notification.
@@ -47,7 +52,7 @@ To run the project, do:
 $ python main.py
 ```
 
-## Why this is useful
+## Why this applet is useful
 My computer doesn't always heat up obnoxiously to the point where it shuts down. It usually does so
 if I'm gaming, or if I'm doing heavy media rendering like using CAD software or watching cat videos
 during ~boring zoom meetings~ online classes.
@@ -61,7 +66,8 @@ because I also need it to work as a laptop when I go to school. So this is curre
 ## F.A.Q.
 
 ### 105 Degrees?! That's alot!
-True. It might not be that much. I haven't actually measured it yet. I do know two facts:
+True, 105 is very hot. I haven't directly measured my CPU reaching such temperatures.
+My guestimation of 105 degrees comes from these two facts:
 
 1. 105 degrees is what the `sensors` command lists as my CPU's "critical" temperature.
    Thus I assume that is the point where it automatically shuts down with no warning
