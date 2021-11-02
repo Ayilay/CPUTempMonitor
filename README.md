@@ -1,6 +1,9 @@
 # CPU Temperature Monitor
 
-![App Screenshot](resources/app_screenshot.png)
+<p float="left">
+    <img src="resources/app_screenshot.png" height="300"/>
+    <img src="resources/app_screenshot_overheat.png" height="300"/>
+</p>
 
 ## Background Info
 My Lenovo T430 laptop heats up **alot** to the point where it shuts down without warning. Alot means 105 °C.
